@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de la ID</title>
+    <link rel="stylesheet" href="css/himnario.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+
+
+    <!-- PANEL PRINCIPAL -->
+    <section class="relative bg-cover bg-center h-64 flex items-center justify-center text-white"
+             style="background-image: url('Imagenes/Notis.png'); ">
+        <div class="bg-black bg-opacity-50 p-6 rounded">
+            <h1 class="text-3xl md:text-4xl font-bold">Noticias de la ID</h1>
+            <br />
+            <a href="index.html" class="btn-volver">← Volver</a>
+        </div>
+    </section>
+    <!-- Botón retroceder -->
+    
+
+
+    <!-- CONTENEDOR DE NOTICIAS -->
+    <section class="container mx-auto py-10 px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+
+        <!-- BLOQUE DE NOTICIA 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer group" onclick="abrirNoticia('noticia1')">
+            <img src="Imagenes/anuncio.jpg" alt="Noticia 1" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="p-4">
+                <h2 class="text-xl font-semibold">Culto pro Casa de oracion ID Central</h2>
+                <p class="text-gray-500 text-sm">Fecha: 17/08/2025</p>
+            </div>
+        </div>
+
+        <!-- BLOQUE DE NOTICIA 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer group" onclick="abrirNoticia('noticia2')">
+            <img src="Imagenes/anuncio2.jpg" alt="Noticia 2" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="p-4">
+                <h2 class="text-xl font-semibold">Clase de preparacion para obreros Distrito uno</h2>
+                <p class="text-gray-500 text-sm">Fecha: 24/02/2025</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- MODAL NOTICIA -->
+    <div id="modalNoticia" class="fixed inset-0 bg-black bg-opacity-70 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-xl shadow-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 relative">
+            <!-- Botón cerrar -->
+            <button onclick="cerrarNoticia()"
+                    class="absolute top-3 right-3 text-gray-600 hover:text-black text-2xl">
+                &times;
+            </button>
+
+            <!-- Contenido de la noticia -->
+            <h2 id="tituloNoticia" class="text-2xl font-bold mb-4">Título de la Noticia</h2>
+
+            <!-- Galería de fotos -->
+            <div id="imagenesNoticia" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <!-- Aquí se inyectarán imágenes dinámicamente -->
+            </div>
+
+            <!-- Texto de la noticia -->
+            <p id="contenidoNoticia" class="text-gray-700 leading-relaxed">
+                Aquí irá el contenido completo de la noticia seleccionada.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function abrirNoticia(id) {
+            const modal = document.getElementById("modalNoticia");
+            const titulo = document.getElementById("tituloNoticia");
+            const contenido = document.getElementById("contenidoNoticia");
+            const imagenes = document.getElementById("imagenesNoticia");
+
+            modal.classList.remove("hidden");
+
+            if (id === "noticia1") {
+                titulo.innerText = "Culto pro casa de oracion de la iglesia de Dios Central";
+                contenido.innerText = "La iglesia de Dios central llevara a cabo el culto en busqueda de recolectar fondos para su casa de oracion la cual buscan cosntruir";
+
+                // Imágenes para la noticia 1
+                imagenes.innerHTML = `
+                                <img src="Imagenes/anuncio.jpg" class="w-full h-48 object-cover rounded-lg">
+                            `;
+            }
+            else if (id === "noticia2") {
+                titulo.innerText = "Comienzan las clases de preparacion para obreros en el distrito uno";
+                contenido.innerText = "Este domingo 24 de febrero desde la casa de oracion en la central, se estara llevando a cabo el inciio de clases de preparacion para obreros, para mas informacion preguntar en las oficinas de distrito.";
+
+                // Imágenes para la noticia 2
+                imagenes.innerHTML = `
+                                <img src="Imagenes/anuncio2.jpg" class="w-full h-48 object-cover rounded-lg">
+                            `;
+            }
+        }
+
+        function cerrarNoticia() {
+            document.getElementById("modalNoticia").classList.add("hidden");
+        }
+    </script>
+
+
+</body>
+</html>

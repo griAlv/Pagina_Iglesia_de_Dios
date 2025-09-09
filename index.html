@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia de Dios El Salvador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 pt-20">
+
+    <!-- HEADER -->
+    <header id="header" class="bg-transparent backdrop-blur-md shadow-md fixed w-full z-10 top-0 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+            <a href="#inicio">
+                <img src="C:\Users\danim\OneDrive\Escritorio\PaginaIglesiadeDios\Imagenes\Logo Iglesia de Dios.png" alt="Logo Iglesia" class="h-12 w-auto">
+            </a>
+
+            <!-- Menú de navegación -->
+            <nav class="space-x-6">
+                <a href="himnario-seleccionado.html" class="hover:text-blue-400 text-white">Himnario Seleccionado</a>
+                <a href="himnario-inspirado.html" class="hover:text-blue-400 text-white">Himnario Inspirado</a>
+                <a href="EscuelasSabaticas.html" class="hover:text-blue-400 text-white">Escuelas Sabáticas</a>
+                <a href="doctrina.html" class="hover:text-blue-400 text-white">Doctrina</a>
+                <a href="documentacion.html" class="hover:text-blue-400 text-white">Documentación</a>
+                <a href="localidades.html" class="hover:text-blue-400 text-white">Localidades</a>
+                <a href="eventos.html" class="hover:text-blue-400 text-white">Eventos</a>
+                <a href="multimedia.html" class="hover:text-blue-400 text-white">Multimedia</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("bg-black");
+                header.classList.remove("bg-transparent");
+            } else {
+                header.classList.add("bg-transparent");
+                header.classList.remove("bg-black");
+            }
+        });
+    </script>
+
+    <!-- Imagen de fondo -->
+    <!-- ========================================================================
+                Sección informacion Sobre nosotros
+    ==========================================================================-->
+
+    <section id="sobre-nosotros" class="relative">
+        <!-- Imagen de fondo -->
+        <div class="absolute inset-0 -top-16">
+            <img src="C:\Users\danim\OneDrive\Escritorio\PaginaIglesiadeDios\Imagenes\ImagenPrincipal.jpg"
+                 class="w-full h-screen object-cover brightness-75">
+        </div>
+
+        <!-- Contenido del texto -->
+        <div class="relative container mx-auto h-screen flex flex-col justify-center px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                <!-- Columna izquierda -->
+                <div>
+                    <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 max-w-2xl">
+                        Iglesia de Dios en El Salvador
+                    </h1>
+                    <p class="text-white text-lg md:text-xl max-w-2xl">
+                        Somos la Iglesia de Dios, fundada por nuestro Señor Jesucristo en el año 26 de la Era Cristiana. 
+                        Comisionando primeramente a 12 apóstoles, a quienes se les encomienda la misión de predicar el evangelio 
+                        a toda criatura, comenzando desde Jerusalén, Judea, Samaria y hasta lo último de la tierra. Como organización 
+                        cristiana nos esforzamos por mantener la observancia de los Mandamientos de nuestro Dios y el Testimonio 
+                        de Jesús, con una doctrina que se constituye en la columna y apoyo de la verdad.
+                    </p>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class=" p-6 rounded-2xl ">
+                    <h2 class="text-white text-3xl font-semibold mb-4">Misión</h2>
+                    <p class="text-gray-200 mb-6">
+                        Enseñar la doctrina que practicaron los apóstoles de Jesucristo en Jerusalem, observando orden y decencia, todo basado en las Sagradas Escrituras, con el fin de librar al hombre de pecado para que, con fe en Cristo Jesús, pueda ser útil a la humanidad y finalmente obtener la vida eterna.
+                    </p>
+
+                    <h2 class="text-white text-3xl font-semibold mb-4">Visión</h2>
+                    <p class="text-gray-200 mb-6">
+                        Ser la Iglesia pura y sin mancha que saldrá al encuentro del Señor Jesucristo en su Segunda Venida, con el fin de vivir mil años con él, y después una eternidad con el Padre Celestial.
+                    </p>
+
+                    <a href="historia.html"
+                       class="inline-block bg-gray-50 hover:bg-gray-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg transition">
+                        Historia de la iglesia
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+            Sección Nuestros Ministerios
+    ===========================================================================-->
+
+    <div class="carrusel-ministerios">
+        <div class="cajas">
+            <div class="caja">
+                <a href="himnario-seleccionado.html">
+                    <img src="Imagenes/es1.png" alt="Ministerio 1">
+                </a>
+            </div>
+            <div class="caja">
+                <a href="himnario-seleccionado.html">
+                    <img src="Imagenes/es2.png" alt="Ministerio 2">
+                </a>
+            </div>
+            <div class="caja">
+                <a href="himnario-seleccionado.html">
+                    <img src="Imagenes/es3.png" alt="Ministerio 3">
+                </a>
+            </div>
+            <div class="caja">
+                <a href="himnario-seleccionado.html">
+                    <img src="Imagenes/es4.png" alt="Ministerio 4">
+                </a>
+            </div>
+            <div class="caja">
+                <a href="himnario-seleccionado.html">
+                    <img src="Imagenes/es5.png" alt="Ministerio 5">
+                </a>
+            </div>
+        </div>
+        <button class="prevo">&#10094;</button>
+        <button class="nexto">&#10095;</button>
+    </div>
+
+    <!-- ========================================================================
+            Sección Noticias
+    ==========================================================================-->
+
+    <section class="noticias">
+
+        <div class="noticias-header">
+            <h2>Noticias</h2>
+            <a href="Noticias.html" class="btn-articulos">Más noticias</a>
+        </div>
+
+        <div class="noticias-contenido">
+            <!-- Noticia principal -->
+            <div class="noticia-principal">
+                <img src="Imagenes/anuncio.jpg" alt="Noticia principal">
+                <div class="noticia-info">
+                    <span class="categoria">Iglesia de Dios Central</span>
+                    <h3>La Iglesia de Dios Central, se prepara para su culto pro local</h3>
+                    <p class="fecha">17 de agosto de 2025</p>
+                </div>
+            </div>
+
+            <!-- Noticias secundarias -->
+            <div class="noticias-secundarias">
+                <div class="noticia-secundaria">
+                    <img src="Imagenes/anuncio2.jpg" alt="Noticia secundaria 1">
+                    <div>
+                        <span class="categoria">Distrito 1</span>
+                        <h4>Comienzan las clases de preparación para obreros</h4>
+                        <p class="fecha">22 de agosto de 2025</p>
+                    </div>
+                </div>
+
+                <div class="noticia-secundaria">
+                    <img src="Imagenes/anuncio3.jpg" alt="Noticia secundaria 2">
+                    <div>
+                        <span class="categoria">ID CENTRAL</span>
+                        <h4>¿Posible remodelación para la iglesia de Dios central?</h4>
+                        <p class="fecha">6 de agosto de 2025</p>
+                    </div>
+                </div>
+
+                <div class="noticia-secundaria">
+                    <img src="Imagenes/ejemplo.png" alt="Noticia secundaria 3">
+                    <div>
+                        <span class="categoria">Nivel Nacional</span>
+                        <h4>Se da a conocer el nombre de la escuela general del próximo trimestre</h4>
+                        <p class="fecha">31 de agosto de 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+               Sección Escuelas Sabáticas
+    ==========================================================================-->
+
+    <section id="Escuelas" class="Escuelas">
+        <div class="Escuelas-header">
+            <h2>Escuelas Sabáticas</h2>
+            <a href="EscuelasSabaticas.html" class="btn-escuelas">Más Escuelas</a>
+        </div>
+
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/escuela1.png');"
+                 onclick="window.open('EscuelasPDF/escuelageneral032025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela General</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/escuela3.png');"
+                 onclick="window.open('EscuelasPDF/escuelafemenil032025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Femenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/escuela2.png');"
+                 onclick="window.open('EscuelasPDF/escuelajuvenil032025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Juvenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/infantil.png');"
+                 onclick="window.open('EscuelasPDF/escuelainfantil012025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela infantil</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================================================
+            Sección Más de nosotros!
+    ==========================================================================-->
+
+    <div class="mas-header">
+        <h2>Más de nosotros!</h2>
+    </div>
+
+    <div class="mas-section">
+
+        <!-- Carrusel -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <a href="himnario-seleccionado.html">
+                        <img src="Imagenes/mas1.jpg" alt="Noticia 1">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="HimnarioInspirado.html">
+                        <img src="Imagenes/mas2.jpg" alt="Noticia 2">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="EscuelasSabaticas.html">
+                        <img src="Imagenes/mas3.jpg" alt="Noticia 3">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="Doctrina.html">
+                        <img src="Imagenes/mas4.jpg" alt="Noticia 4">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="Documentacion.html">
+                        <img src="Imagenes/mas5.jpg" alt="Noticia 5">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="localidades.html">
+                        <img src="Imagenes/mas6.jpg" alt="Noticia 6">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="eventos.html">
+                        <img src="Imagenes/mas7.jpg" alt="Noticia 7">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="multimedia.html">
+                        <img src="Imagenes/mas8.jpg" alt="Noticia 8">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Flechas -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+
+            <!-- Indicadores -->
+            <div class="indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <!-- Artículos recientes -->
+        <aside class="recent-articles">
+            <div class="Textmas"></div>
+        </aside>
+    </div>
+
+
+
+
+    <!-- ========================================================================
+               Sección Contactos
+       ==========================================================================-->
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-6">Contáctanos</h3>
+            <p class="mb-4">📍 Dirección: Calle El Rosal #2625, San Salvador</p>
+            <p class="mb-4">📞 Tel: +503 1234 5678</p>
+            <p class="mb-6">🌐 Síguenos en redes sociales</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-blue-400">Facebook</a>
+                <a href="#" class="hover:text-pink-400">Radio Abba</a>
+                <a href="#" class="hover:text-green-400">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-4">
+        © Iglesia De Dios - El salvador | Proyecto Base by DM
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>
+
